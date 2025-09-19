@@ -1,17 +1,28 @@
-export default function ProjectCard({image, title, stacks = [], gitLink, liveLink}) {
+export default function ProjectCard({
+  image,
+  title,
+  stacks = [],
+  gitLink,
+  liveLink,
+}) {
   return (
-    <div className="bg-zinc-950 shadow-lg  overflow-hidden w-[509px] mx-auto border-1 border-zinc-800">
-    <img src={image} alt={title} className="w-full object-cover h-[309px]" />
+    <div className="bg-zinc-950 shadow-lg  overflow-hidden w-full md:w-[509px] mx-auto border-1 border-zinc-800">
+      <img src={image} alt={title} className="w-full object-cover h-[309px]" />
 
-    <div className="p-5 flex flex-col gap-4">
-      <h4 className="text-3xl font-semibold text-gray-300">{title}</h4>
+      <div className="p-5 flex flex-col gap-4">
+        <h4 className="text-3xl font-semibold text-gray-300">{title}</h4>
 
-      <div className="flex gap-4 flex-wrap ">
-        {stacks.map((IconComponent, index) => (
-          <IconComponent key={index} title={IconComponent.name} size={24} color="#fff" />
-        ))}
-      </div>
-      <div className="flex gap-3 mt-4">
+        <div className="flex gap-4 flex-wrap ">
+          {stacks.map((IconComponent, index) => (
+            <IconComponent
+              key={index}
+              title={IconComponent.name}
+              size={24}
+              color="#fff"
+            />
+          ))}
+        </div>
+        <div className="flex gap-3 mt-4">
           {gitLink && (
             <a
               href={gitLink}
@@ -33,7 +44,7 @@ export default function ProjectCard({image, title, stacks = [], gitLink, liveLin
             </a>
           )}
         </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }

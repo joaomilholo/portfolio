@@ -1,7 +1,6 @@
 import Navbar from './components/navbar';
 import Hero from './sections/hero';
 import Projects from './sections/projects';
-
 import './styles/app.css';
 
 function App() {
