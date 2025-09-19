@@ -4,7 +4,7 @@ import Button from '../components/button';
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col p-10 items-center justify-center bg-[url('../public/looper-bg.svg')] bg-no-repeat bg-top-right">
+    <section id='#home' className="w-full flex flex-col p-10 items-center justify-center bg-[url('../public/looper-bg.svg')] bg-no-repeat bg-top-right">
       <div className=" xl:w-[1140px] w-full min-h-[600px] flex-col flex items-start justify-center md:px-[60px] border-b-1 border-zinc-800  ">
         <div className=" flex flex-col max-w-[660px] gap-3">
           <h1 className="text-zinc-200 text-6xl font-bold">
