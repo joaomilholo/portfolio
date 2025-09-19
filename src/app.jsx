@@ -7,6 +7,7 @@ function App() {
     <div className="bg-zinc-950 w-full flex flex-col h-dvh text-zinc-400 items-center ">
       <Navbar />
       <Hero />
+
       <h1>Opa, bão fi ?</h1>
       <p>Bão demais da conta só</p>
     </div>
